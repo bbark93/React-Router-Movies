@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Routes, Route } from 'react-router-dom'
+import MovieList from './Movies/MovieList'
 
 import SavedList from './Movies/SavedList';
 
@@ -12,6 +14,7 @@ export default function App () {
       axios
         .get('http://localhost:5001/api/movies') // Study this endpoint with Postman
         .then(response => {
+          setMovies(response.data);
           // Study this response with a breakpoint or log statements
           // and set the response data as the 'movies' slice of state
         })
@@ -30,7 +33,9 @@ export default function App () {
     <div>
       <SavedList list={[ /* This is stretch */]} />
 
-      <div>Replace this Div with your Routes</div>
+      <Routes>
+        <Route path='/' element={<MovieList movies={movies}/>}/>
+      </Routes>
     </div>
   );
 }
