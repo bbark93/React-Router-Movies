@@ -11,9 +11,9 @@
 
 ### Task 1: Project Set-up
 
-* [ ] **Fork** this repository, then clone your fork.
-* [ ] Execute `npm install` to download dependencies. The `react-router-dom` library is already installed!
-* [ ] Execute `npm run start` to launch your Movies application in Chrome.
+* [x] **Fork** this repository, then clone your fork.
+* [x] Execute `npm install` to download dependencies. The `react-router-dom` library is already installed!
+* [x] Execute `npm run start` to launch your Movies application in Chrome.
 
 **Once your application is up and running**, you should see a browser window that looks like [this](https://tk-assets.lambdaschool.com/c6b3e8d8-afe0-4663-82da-60b1de76f649_movies-home.png) at `http://localhost:3000`.
 
